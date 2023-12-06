@@ -1,6 +1,6 @@
 # wm-http-interceptor
 
-Simple Eclipse java project defining sample HTTP inbound and outbound interceptors.
+Simple Eclipse java project defining sample HTTP inbound and outbound interceptors for the webMethods Integration Server.
 
 ## Importing project into Eclipse
 
