@@ -1,6 +1,6 @@
 # wm-http-interceptor
 
-Simple Eclipse java project defining sample HTTP inbound and outbound interceptors for the webMethods Integration Server.
+Simple Eclipse Java project defining sample HTTP inbound and outbound interceptors for the webMethods Integration Server.
 
 ## Importing project into Eclipse
 
@@ -9,7 +9,8 @@ Simple Eclipse java project defining sample HTTP inbound and outbound intercepto
 1. Go to File > Import...
 1. Choose Projects from Git... and click Next
 1. Choose Clone URI and click Next
-1. Paste https://github.com/nibltech/wm-http-interceptor into the URI field and click Next
+1. Paste https://github.com/nibltech/wm-http-interceptor into the URI field
+1. Follow through the prompts to import the project
 
 ## Create the WEBMETHODS_HOME build path variable
 
@@ -59,7 +60,7 @@ The project requires the wm-isclient.jar from the Software AG installation in or
 1. Perform HTTP inbound and outbound operations to see if the interceptor writes information to the wrapper log
 1. A simple test is to use the pub.client:http service to invoke the wm.server:ping on the server itself. For example, if you have a local Integration Server running on port 5555, you can:
     1. Open a browser
-    1. Paste the URL: http://localhost:5555/invoke/pub.client:http?url=http://localhost:5555/invoke/wm.server:ping
+    1. Paste the URL: http://localhost:5555/invoke/pub.client:http?url=http://localhost:5555/invoke/wm.server:ping&method=get
     1. Hit return
 1. Sample output:
 ```
