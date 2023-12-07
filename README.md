@@ -7,7 +7,7 @@ Simple Eclipse Java project defining sample HTTP inbound and outbound intercepto
 1. Open Eclipse or Software AG Designer
 1. Switch to the Java perspective
 1. Go to File > Import...
-1. Choose Projects from Git... and click Next
+1. Choose Projects from Git and click Next
 1. Choose Clone URI and click Next
 1. Paste https://github.com/nibltech/wm-http-interceptor into the URI field
 1. Follow through the prompts to import the project
@@ -58,7 +58,7 @@ The project requires the wm-isclient.jar from the Software AG installation in or
 
 1. Tail the Integration Server's wrapper log where all standard output is re-directed (e.g. C:\SoftwareAG\profiles\IS_default\logs\wrapper.log)
 1. Perform HTTP inbound and outbound operations to see if the interceptor writes information to the wrapper log
-1. A simple test is to use the pub.client:http service to invoke the wm.server:ping on the server itself. For example, if you have a local Integration Server running on port 5555, you can:
+1. A simple test is to use the pub.client:http service to invoke the wm.server:ping service on the server itself. For example, if you have a local Integration Server running on port 5555, you can:
     1. Open a browser
     1. Paste the URL: http://localhost:5555/invoke/pub.client:http?url=http://localhost:5555/invoke/wm.server:ping&method=get
     1. Hit return
@@ -90,7 +90,7 @@ INFO   | jvm 1    | 2023/12/06 15:44:42 |   UUID: 0506bd09ed964640b1d128180f9c23
 INFO   | jvm 1    | 2023/12/06 15:44:42 | <<< HTTP Inbound Pre-Process
 INFO   | jvm 1    | 2023/12/06 15:44:42 | HTTP Outbound Pre-Process >>>
 INFO   | jvm 1    | 2023/12/06 15:44:42 |   Method: GET
-INFO   | jvm 1    | 2023/12/06 15:44:42 |   Resource: http://localhost:5555/invoke/wm.server:ping
+INFO   | jvm 1    | 2023/12/06 15:44:42 |   Path: http://localhost:5555/invoke/wm.server:ping
 INFO   | jvm 1    | 2023/12/06 15:44:42 |   Protocol: HTTP/1.1
 INFO   | jvm 1    | 2023/12/06 15:44:42 |   Headers:
 INFO   | jvm 1    | 2023/12/06 15:44:42 |     User-Agent: Mozilla/4.0 [en] (WinNT; I)
